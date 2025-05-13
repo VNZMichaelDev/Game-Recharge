@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GameRecharge - Recargas para juegos</title>
+  <!-- Favicon - Solución simple -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎮</text></svg>">
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles-responsive.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-container">
+      <div class="logo">
+        <a href="index.html" class="logo-link">
+          <i class="fa-solid fa-gamepad"></i>
+          <span class="logo-text">GameRecharge</span>
+        </a>
+      </div>
+      <nav class="nav">
+        <button class="nav-button" onclick="scrollToTop()">Inicio</button>
+        <button class="nav-button" onclick="scrollToSection('games-section')">Juegos</button>
+        <a href="soporte.html" class="nav-button">Soporte</a>
+      </nav>
+      <button id="mobileMenuToggle" class="mobile-menu-toggle">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="mobile-menu">
+      <button class="nav-button" onclick="scrollToTop()">Inicio</button>
+      <button class="nav-button" onclick="scrollToSection('games-section')">Juegos</button>
+      <a href="soporte.html" class="nav-button">Soporte</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <h1 class="hero-title">Recarga tus juegos favoritos al instante</h1>
+          <p class="hero-description">
+            Obtén diamantes, monedas y créditos para Free Fire, Blood Strike, COD Mobile y Mobile Legends de
+            forma rápida y segura.
+          </p>
+          <div class="hero-buttons">
+            <button class="button primary-button" onclick="scrollToSection('recharge-form')">
+              Recargar Ahora
+            </button>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="https://imgmedia.libero.pe/652x365/libero/original/2022/09/03/63136936273ef33d9e4ebe38.webp" alt="Gaming" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Games Section -->
+    <section class="games-section" id="games-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Juegos Disponibles</h2>
+          <p class="section-description">
+            Recarga tus juegos favoritos con los mejores precios del mercado
+          </p>
+        </div>
+        <div class="games-grid">
+          <div class="game-card">
+            <div class="game-image">
+              <img src="https://cdn.pixabay.com/photo/2021/08/31/18/28/garena-free-fire-6589783_1280.png" alt="Free Fire" />
+            </div>
+            <div class="game-content">
+              <h3 class="game-title">Free Fire</h3>
+              <p class="game-description">Recarga diamantes para Free Fire</p>
+            </div>
+            <div class="game-footer">
+              <button class="button primary-button full-width" onclick="scrollToSection('recharge-form')">
+                Recargar
+              </button>
+            </div>
+          </div>
+
+          <div class="game-card">
+            <div class="game-image">
+              <img src="https://play-lh.googleusercontent.com/QTXKmUTURxKMKW4P70vvlGMq83khQKblxMXUTjkjxFoFDCcS3cn4uVs6_9Nn2q8SpNg" alt="Blood Strike" />
+            </div>
+            <div class="game-content">
+              <h3 class="game-title">Blood Strike</h3>
+              <p class="game-description">Recarga monedas para Blood Strike</p>
+            </div>
+            <div class="game-footer">
+              <button class="button primary-button full-width" onclick="scrollToSection('recharge-form')">
+                Recargar
+              </button>
+            </div>
+          </div>
+
+        <div class="game-card">
+            <div class="game-image">
+              <img src="https://i.pinimg.com/736x/bf/de/fe/bfdefe0c2c451d41ed890fe895afb2f4.jpg" alt="COD Mobile" />
+            </div>
+            <div class="game-content">
+              <h3 class="game-title">COD Mobile</h3>
+              <p class="game-description">Recarga CP para Call of Duty Mobile</p>
+            </div>
+            <div class="game-footer">
+              <button class="button primary-button full-width" onclick="scrollToSection('recharge-form')">
+                Recargar
+              </button>
+            </div>
+          </div>
+
+          <div class="game-card">
+            <div class="game-image">
+              <img src="https://i.pinimg.com/736x/2b/9b/07/2b9b07525c268388494be64db988af18.jpg" alt="Mobile Legends" />
+            </div>
+            <div class="game-content">
+              <h3 class="game-title">Mobile Legends</h3>
+              <p class="game-description">Recarga diamantes para Mobile Legends</p>
+            </div>
+            <div class="game-footer">
+              <button class="button primary-button full-width" onclick="scrollToSection('recharge-form')">
+                Recargar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recharge Form Section -->
+    <section class="recharge-form-section" id="recharge-form">
+      <div class="container">
+        <div class="section-header light">
+          <h2 class="section-title">Recarga Ahora</h2>
+          <p class="section-description">
+            Completa el formulario para recargar tu juego favorito
+          </p>
+        </div>
+        <div class="form-container">
+          <div class="card">
+            <div class="card-content">
+              <form id="rechargeForm" onsubmit="handleFormSubmit(event)">
+                <div class="form-group">
+                  <label for="game">Selecciona tu juego</label>
+                  <select id="game" required>
+                    <option value="" disabled selected>Selecciona un juego</option>
+                    <option value="free-fire">Free Fire</option>
+                    <option value="blood-strike">Blood Strike</option>
+                    <option value="cod-mobile">COD Mobile</option>
+                    <option value="mobile-legends">Mobile Legends</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="gameId">ID del jugador</label>
+                  <input type="text" id="gameId" placeholder="Ingresa tu ID de jugador" required />
+                </div>
+
+                <div class="form-group">
+                  <label>Método de pago</label>
+                  <div class="radio-group">
+                    <div class="radio-item">
+                      <input type="radio" id="creditCard" name="paymentMethod" value="credit-card" checked />
+                      <label for="creditCard">Tarjeta de Crédito/Débito</label>
+                    </div>
+                    <div class="radio-item">
+                      <input type="radio" id="paypal" name="paymentMethod" value="paypal" />
+                      <label for="paypal">PayPal</label>
+                    </div>
+                    <div class="radio-item">
+                      <input type="radio" id="pagoMovil" name="paymentMethod" value="pago-movil" />
+                      <label for="pagoMovil">Pago Móvil</label>
+                    </div>
+                    <div class="radio-item">
+                      <input type="radio" id="binance" name="paymentMethod" value="binance" />
+                      <label for="binance">Binance</label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="instructions-box">
+                  <h4>Instrucciones:</h4>
+                  <ol>
+                    <li>Completa todos los campos del formulario</li>
+                    <li>Presiona el botón "Enviar por WhatsApp"</li>
+                    <li>Se abrirá una conversación de WhatsApp con tus datos</li>
+                    <li>Envía el mensaje y espera nuestra respuesta</li>
+                  </ol>
+                </div>
+
+                <button type="submit" class="button whatsapp-button">
+                  <i class="fab fa-whatsapp"></i>
+                  Enviar por WhatsApp
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">¿Por qué elegirnos?</h2>
+          <p class="section-description">
+            Ofrecemos el mejor servicio de recargas para tus juegos favoritos
+          </p>
+        </div>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fa-solid fa-credit-card"></i>
+            </div>
+            <h3 class="feature-title">Pagos Seguros</h3>
+            <p class="feature-description">
+              Utilizamos métodos de pago seguros y confiables para proteger tus transacciones
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fa-solid fa-clock"></i>
+            </div>
+            <h3 class="feature-title">Instrucciones Claras</h3>
+            <p class="feature-description">
+              Sigue nuestras instrucciones paso a paso para completar tu recarga sin complicaciones
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fa-solid fa-shield"></i>
+            </div>
+            <h3 class="feature-title">100% Garantizado</h3>
+            <p class="feature-description">
+              Garantizamos la entrega de tus recargas o te devolvemos tu dinero
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-logo">
+        <i class="fa-solid fa-gamepad"></i>
+        <span class="logo-text">GameRecharge</span>
+      </div>
+      <p class="copyright">
+        &copy; <span id="currentYear"></span> GameRecharge. Todos los derechos reservados.
+      </p>
+      <div class="footer-links">
+        <a href="#" class="footer-link">Términos</a>
+        <a href="#" class="footer-link">Privacidad</a>
+        <a href="#" class="footer-link">Contacto</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script-responsive.js"></script>
+</body>
+</html>
