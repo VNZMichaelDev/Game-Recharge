@@ -130,10 +130,7 @@ function handleFormSubmit(event) {
       paymentMethodText = paymentMethod
   }
 
-  // Create WhatsApp message
-  const message = `*Nueva Solicitud de Recarga*%0A%0A*Juego:* ${gameName}%0A*ID de Jugador:* ${gameId}%0A*Método de Pago:* ${paymentMethodText}%0A%0APor favor espera nuestra respuesta para continuar con el proceso de recarga.`
-
   // Open WhatsApp with message
   // Replace 'tunumero' with the actual WhatsApp number
-  window.open(`https://wa.me/584245851434?text=${message}`, "_blank")
+  window.open(`https://wa.me/584245851434
 }
