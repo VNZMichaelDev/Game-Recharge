@@ -135,5 +135,5 @@ function handleFormSubmit(event) {
 
   // Open WhatsApp with message
   // Replace 'tunumero' with the actual WhatsApp number
-  window.open(`https://wa.me/tunumero?text=${message}`, "_blank")
+  window.open(`https://wa.me/584245851434?text=${message}`, "_blank")
 }
